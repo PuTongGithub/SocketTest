@@ -18,7 +18,7 @@ int main(){
     struct sockaddr_in cliaddr;
     socklen_t clilen = sizeof(cliaddr);
     int connfd;
-    char str[] = "hello!\n";
+    char str[] = "hello!";
     int count = 0;
     while(true){
         connfd = accept(socketfd, (struct sockaddr*)&cliaddr, &clilen);
